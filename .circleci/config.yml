@@ -48,7 +48,7 @@ jobs:
     steps:
       - checkout
 
-      - run: docker pull chandrarai/cir_chandra:$CIRCLE_SHA1
+      - run: docker pull 9841446629/cir_chandra:$CIRCLE_SHA1
 
-      - run: docker run -p 8888:5000 --name cir_chandra chandrarai/cir_chandra:$CIRCLE_SHA1
+      - run: docker run -p 8888:5000 --name cir_chandra 9841446629/cir_chandra:$CIRCLE_SHA1
 
